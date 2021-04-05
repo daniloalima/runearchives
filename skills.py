@@ -5,30 +5,78 @@ def herblore():
 
   return reply
 
-def attack():
+def woodcuting():
   reply = 'Desculpe, ainda não temos nada sobre essa skill :('
   return reply
 
-def defence():
+def firemaking():
   reply = 'Desculpe, ainda não temos nada sobre essa skill :('
   return reply
 
-def strenght():
+def archeology():
   reply = 'Desculpe, ainda não temos nada sobre essa skill :('
   return reply
 
-def ranged():
+def crafting():
   reply = 'Desculpe, ainda não temos nada sobre essa skill :('
   return reply
 
-def magic():
+def runecrafting():
   reply = 'Desculpe, ainda não temos nada sobre essa skill :('
   return reply
 
-def prayer():
+def construction():
   reply = 'Desculpe, ainda não temos nada sobre essa skill :('
   return reply
 
-def summoning():
+def thieving():
+  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
+  return reply
+
+def fletching():
+  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
+  return reply
+
+def invention():
+  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
+  return reply
+
+def divination():
+  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
+  return reply
+
+def hunter():
+  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
+  return reply
+
+def dungeoneering():
+  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
+  return reply
+
+def agility():
+  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
+  return reply
+
+def farming():
+  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
+  return reply
+
+def cooking():
+  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
+  return reply
+
+def fishing():
+  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
+  return reply
+
+def mining():
+  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
+  return reply
+
+def smithing():
+  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
+  return reply
+
+def slayer():
   reply = 'Desculpe, ainda não temos nada sobre essa skill :('
   return reply
