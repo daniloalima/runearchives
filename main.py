@@ -1,6 +1,8 @@
 import discord
 import os
-from skills import herblore
+import skills
+import skills_combate
+import commands
 
 client = discord.Client()
 
@@ -10,14 +12,10 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-  reply = ''
-
-  if message.author == client.user:
-    return
-
-  if message.content.startswith('rs!herb') or message.content.startswith('rs!herblore'):
-    reply = herblore()
-    await message.channel.send(reply)
-
+  command = commands.get_command(message)
+  skill = ''
+  temp = command.split('!')
+  skill = temp[1]
+  
 
 client.run(os.getenv('BOT_TOKEN'))
