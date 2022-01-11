@@ -1,82 +1,88 @@
-def herblore():
-  reply = 'Guia em video (inglês): https://youtu.be/31XuxpkI7A4 \n' + \
-    'Calculadora da Wiki: https://runescape.wiki/w/Calculator:Herblore\n' + \
-    'Calculadora de overloads: https://runescape.wiki/w/Calculator:Herblore/Overload_variants'
+def get_command_skill(skill):
 
-  return reply
+  if skill=='herb' or skill=='herblore':
+    return 'rs!herblore'
 
-def woodcuting():
-  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
-  return reply
+  elif skill=='attack' or skill=='atk':
+    return 'rs!attack'
 
-def firemaking():
-  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
-  return reply
+  elif skill=='hp' or skill=='constitution':
+    return 'rs!constitution'
 
-def archeology():
-  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
-  return reply
+  elif skill=='str' or skill=='rs!strenght':
+    return 'rs!strenght'
 
-def crafting():
-  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
-  return reply
+  elif skill=='rgd' or skill=='ranged':
+    return 'rs!ranged'
 
-def runecrafting():
-  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
-  return reply
+  elif skill=='def' or skill=='defence':
+    return 'rs!defence'
 
-def construction():
-  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
-  return reply
+  elif skill=='magic' or skill=='mage':
+    return 'rs!magic'
 
-def thieving():
-  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
-  return reply
+  elif skill=='summon' or skill=='summoning':
+    return 'rs!summoning'
 
-def fletching():
-  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
-  return reply
+  elif skill=='wc' or skill=='woodcuting':
+    return 'rs!woodcuting'
 
-def invention():
-  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
-  return reply
+  elif skill=='fm' or skill=='firemaking':
+    return 'rs!firemaking'
+  
+  elif skill=='hunt' or skill=='hunter':
+    return 'rs!hunter'
 
-def divination():
-  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
-  return reply
+  elif skill=='minig' or skill=='mining':
+    return 'rs!mining'
 
-def hunter():
-  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
-  return reply
+  elif skill=='pray' or skill=='prayer':
+    return 'rs!prayer'
 
-def dungeoneering():
-  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
-  return reply
+  elif skill=='pray' or skill=='prayer':
+    return 'rs!prayer'
 
-def agility():
-  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
-  return reply
+  elif skill=='pray' or skill=='prayer':
+    return 'rs!prayer'
 
-def farming():
-  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
-  return reply
+  elif skill=='pray' or skill=='prayer':
+    return 'rs!prayer'
 
-def cooking():
-  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
-  return reply
+  elif skill=='pray' or skill=='prayer':
+    return 'rs!prayer'
 
-def fishing():
-  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
-  return reply
+  elif skill=='magic' or skill=='mage':
+    return 'rs!magic'
 
-def mining():
-  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
-  return reply
+  elif skill=='summon' or skill=='summoning':
+    return 'rs!summoning'
 
-def smithing():
-  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
-  return reply
+  elif skill=='pray' or skill=='prayer':
+    return 'rs!prayer'
 
-def slayer():
-  reply = 'Desculpe, ainda não temos nada sobre essa skill :('
-  return reply
+  elif skill=='pray' or skill=='prayer':
+    return 'rs!prayer'
+  
+  elif skill=='pray' or skill=='prayer':
+    return 'rs!prayer'
+
+  elif skill=='pray' or skill=='prayer':
+    return 'rs!prayer'
+
+  elif skill=='pray' or skill=='prayer':
+    return 'rs!prayer'
+
+  elif skill=='pray' or skill=='prayer':
+    return 'rs!prayer'
+
+  elif skill=='pray' or skill=='prayer':
+    return 'rs!prayer'
+
+  elif skill=='pray' or skill=='prayer':
+    return 'rs!prayer'
+
+  elif skill=='pray' or skill=='prayer':
+    return 'rs!prayer'
+
+  else:
+    return 'rs!unknown'

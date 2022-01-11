@@ -5,8 +5,8 @@ Bot que vai facilitar a vida de todos, tendo uma imensa "base de conhecimento" s
 
 Como usar:
 
-rs!(skill)
+rs!skill [nome da habilidade]
 Mostra guias, calculadoras e links úteis referente a habilidade citada
 
-rs!(boss)
+rs!boss [nome do chefe]
 Mostra guia, vídeo explicativo (se disponível) e dicas
