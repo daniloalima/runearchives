@@ -22,9 +22,7 @@ async def on_message(message):
       modifier = fields[2]
       dt = fields[3]
     except Exception as e:
-      reply = f'Exception {e}'
-    else:
-      reply = f'Seguindo para validate fields'
+      print('missing fields')
 
     dice_rolled = random.randint(1,20)
     
