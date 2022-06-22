@@ -16,45 +16,25 @@ async def on_message(message):
   msg = message.content
 
   if msg.startswith('!o'):
-    fields = msg.split(' ')
+    fields = msg.split(' ')    
     try:      
-      dice_pool = fields[1]
-      modifier = fields[2]
-      dt = fields[3]
+      dice_pool = int(fields[1])
+      modifier = int(fields[2])
+      dt = int(fields[3])      
     except Exception as e:
       print('missing fields')
 
-    dice_rolled = random.randint(1,20)
+    reply = utils.dice_roll(dice_pool,modifier,dt)    
     
     await message.channel.send(reply)
 
-  # if msg.startswith('rs!skill'):
-  #   skill = msg.split('rs!skill ', 1)[1]
-  #   command = skills.get_command_skill(skill)
-  #   temp = command.split('!')
-  #   function = temp[1]
-  #   reply = eval(function + "()")
+  elif msg.startswith('ordo!help'):
+    reply = utils.help_command()    
+    await message.channel.send(reply)
 
-  #   await message.channel.send(reply)
-
-  # elif msg.startswith('rs!boss'):
-  #   boss = msg.split('rs!boss ', 1)[1]
-  #   try:
-  #     reply = eval(boss + "()")
-  #   except:
-  #     reply = 'Chefe não encontrado, utitlize **!help** para mais informações'
-
-  #   await message.channel.send(reply)
-  
-  # elif msg.startswith('rs!ping'):
-  #   reply = f'Pong! {round(client.latency * 1000)}ms'
-  #   await message.channel.send(reply)
-
-  #elif msg.startswith('rs!help'):
-  #  helpcmd = msg.split('rs!help ',1)[1]
-    
-  #  reply = ''
-  #  await message.channel.send(reply)
+  elif msg.startswith('ordo!ping'):
+    reply = f'Pong! {round(client.latency * 1000)}ms'
+    await message.channel.send(reply)
 
 keep_alive()
 client.run(os.getenv('BOT_TOKEN'))
