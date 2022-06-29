@@ -4,6 +4,7 @@ import utils
 from keep_alive import keep_alive
 import random
 
+
 client = discord.Client()
 
 @client.event
